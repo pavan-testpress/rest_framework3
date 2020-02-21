@@ -8,7 +8,7 @@ used to annotate methods on viewsets that should be included by routers.
 """
 from __future__ import unicode_literals
 from django.utils import six
-from rest_framework.views import APIView
+from rest_framework3.views import APIView
 import types
 
 

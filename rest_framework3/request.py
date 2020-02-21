@@ -15,9 +15,9 @@ from django.http.multipartparser import parse_header
 from django.utils import six
 from django.utils.datastructures import MultiValueDict
 from django.utils.datastructures import MergeDict as DjangoMergeDict
-from rest_framework import HTTP_HEADER_ENCODING
-from rest_framework import exceptions
-from rest_framework.settings import api_settings
+from rest_framework3 import HTTP_HEADER_ENCODING
+from rest_framework3 import exceptions
+from rest_framework3.settings import api_settings
 import sys
 import warnings
 

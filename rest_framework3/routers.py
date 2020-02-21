@@ -20,11 +20,11 @@ from collections import namedtuple
 from django.conf.urls import patterns, url
 from django.core.exceptions import ImproperlyConfigured
 from django.core.urlresolvers import NoReverseMatch
-from rest_framework import views
-from rest_framework.compat import get_resolver_match, OrderedDict
-from rest_framework.response import Response
-from rest_framework.reverse import reverse
-from rest_framework.urlpatterns import format_suffix_patterns
+from rest_framework3 import views
+from rest_framework3.compat import get_resolver_match, OrderedDict
+from rest_framework3.response import Response
+from rest_framework3.reverse import reverse
+from rest_framework3.urlpatterns import format_suffix_patterns
 
 
 Route = namedtuple('Route', ['url', 'mapping', 'name', 'initkwargs'])

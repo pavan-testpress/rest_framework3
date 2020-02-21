@@ -21,7 +21,7 @@ from __future__ import unicode_literals
 from functools import update_wrapper
 from django.utils.decorators import classonlymethod
 from django.views.decorators.csrf import csrf_exempt
-from rest_framework import views, generics, mixins
+from rest_framework3 import views, generics, mixins
 
 
 class ViewSetMixin(object):

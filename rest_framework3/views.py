@@ -7,12 +7,12 @@ from django.core.exceptions import PermissionDenied
 from django.http import Http404
 from django.utils.encoding import smart_text
 from django.views.decorators.csrf import csrf_exempt
-from rest_framework import status, exceptions
-from rest_framework.compat import HttpResponseBase, View
-from rest_framework.request import Request
-from rest_framework.response import Response
-from rest_framework.settings import api_settings
-from rest_framework.utils import formatting
+from rest_framework3 import status, exceptions
+from rest_framework3.compat import HttpResponseBase, View
+from rest_framework3.request import Request
+from rest_framework3.response import Response
+from rest_framework3.settings import api_settings
+from rest_framework3.utils import formatting
 
 
 def get_view_name(view_cls, suffix=None):

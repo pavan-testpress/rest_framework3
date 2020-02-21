@@ -5,8 +5,8 @@ keyword arguments that should be used for their equivelent serializer fields.
 from django.core import validators
 from django.db import models
 from django.utils.text import capfirst
-from rest_framework.compat import clean_manytomany_helptext
-from rest_framework.validators import UniqueValidator
+from rest_framework3.compat import clean_manytomany_helptext
+from rest_framework3.validators import UniqueValidator
 import inspect
 
 

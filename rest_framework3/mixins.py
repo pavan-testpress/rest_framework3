@@ -6,9 +6,9 @@ which allows mixin classes to be composed in interesting ways.
 """
 from __future__ import unicode_literals
 
-from rest_framework import status
-from rest_framework.response import Response
-from rest_framework.settings import api_settings
+from rest_framework3 import status
+from rest_framework3.response import Response
+from rest_framework3.settings import api_settings
 
 
 class CreateModelMixin(object):

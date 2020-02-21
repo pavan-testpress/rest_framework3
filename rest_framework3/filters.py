@@ -7,8 +7,8 @@ from __future__ import unicode_literals
 from django.core.exceptions import ImproperlyConfigured
 from django.db import models
 from django.utils import six
-from rest_framework.compat import django_filters, guardian, get_model_name
-from rest_framework.settings import api_settings
+from rest_framework3.compat import django_filters, guardian, get_model_name
+from rest_framework3.settings import api_settings
 from functools import reduce
 import operator
 

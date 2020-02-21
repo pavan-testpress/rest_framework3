@@ -8,7 +8,7 @@ from django.utils.encoding import iri_to_uri, force_text
 from django.utils.html import escape
 from django.utils.safestring import SafeData, mark_safe
 from django.utils.html import smart_urlquote
-from rest_framework.renderers import HTMLFormRenderer
+from rest_framework3.renderers import HTMLFormRenderer
 import re
 
 register = template.Library()

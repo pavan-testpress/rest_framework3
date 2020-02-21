@@ -9,8 +9,8 @@ from django.http import Http404
 from django.shortcuts import get_object_or_404 as _get_object_or_404
 from django.utils import six
 from django.utils.translation import ugettext as _
-from rest_framework import views, mixins
-from rest_framework.settings import api_settings
+from rest_framework3 import views, mixins
+from rest_framework3.settings import api_settings
 
 
 def strict_positive_int(integer_string, cutoff=None):

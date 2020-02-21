@@ -7,10 +7,10 @@ from django.utils import six
 from django.utils.encoding import smart_text
 from django.utils.six.moves.urllib import parse as urlparse
 from django.utils.translation import ugettext_lazy as _
-from rest_framework.compat import OrderedDict
-from rest_framework.fields import get_attribute, empty, Field
-from rest_framework.reverse import reverse
-from rest_framework.utils import html
+from rest_framework3.compat import OrderedDict
+from rest_framework3.fields import get_attribute, empty, Field
+from rest_framework3.reverse import reverse
+from rest_framework3.utils import html
 
 
 class PKOnlyObject(object):

@@ -3,7 +3,7 @@ Provides a set of pluggable permission policies.
 """
 from __future__ import unicode_literals
 from django.http import Http404
-from rest_framework.compat import (get_model_name, oauth2_provider_scope,
+from rest_framework3.compat import (get_model_name, oauth2_provider_scope,
                                    oauth2_constants)
 
 SAFE_METHODS = ['GET', 'HEAD', 'OPTIONS']

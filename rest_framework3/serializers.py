@@ -14,17 +14,17 @@ from __future__ import unicode_literals
 from django.db import models
 from django.db.models.fields import FieldDoesNotExist, Field as DjangoField
 from django.utils.translation import ugettext_lazy as _
-from rest_framework.compat import postgres_fields, unicode_to_repr
-from rest_framework.utils import model_meta
-from rest_framework.utils.field_mapping import (
+from rest_framework3.compat import postgres_fields, unicode_to_repr
+from rest_framework3.utils import model_meta
+from rest_framework3.utils.field_mapping import (
     get_url_kwargs, get_field_kwargs,
     get_relation_kwargs, get_nested_relation_kwargs,
     ClassLookupDict
 )
-from rest_framework.utils.serializer_helpers import (
+from rest_framework3.utils.serializer_helpers import (
     ReturnDict, ReturnList, BoundField, NestedBoundField, BindingDict
 )
-from rest_framework.validators import (
+from rest_framework3.validators import (
     UniqueForDateValidator, UniqueForMonthValidator, UniqueForYearValidator,
     UniqueTogetherValidator
 )
@@ -38,8 +38,8 @@ import warnings
 # This helps keep the separation between model fields, form fields, and
 # serializer fields more explicit.
 
-from rest_framework.relations import *  # NOQA
-from rest_framework.fields import *  # NOQA
+from rest_framework3.relations import *  # NOQA
+from rest_framework3.fields import *  # NOQA
 
 
 # We assume that 'validators' are intended for the child serializer,

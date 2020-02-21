@@ -8,15 +8,15 @@ from django.utils import six, timezone
 from django.utils.dateparse import parse_date, parse_datetime, parse_time
 from django.utils.encoding import is_protected_type, smart_text
 from django.utils.translation import ugettext_lazy as _
-from rest_framework import ISO_8601
-from rest_framework.compat import (
+from rest_framework3 import ISO_8601
+from rest_framework3.compat import (
     EmailValidator, MinValueValidator, MaxValueValidator,
     MinLengthValidator, MaxLengthValidator, URLValidator, OrderedDict,
     unicode_repr, unicode_to_repr
 )
-from rest_framework.exceptions import ValidationError
-from rest_framework.settings import api_settings
-from rest_framework.utils import html, representation, humanize_datetime
+from rest_framework3.exceptions import ValidationError
+from rest_framework3.settings import api_settings
+from rest_framework3.utils import html, representation, humanize_datetime
 import collections
 import copy
 import datetime

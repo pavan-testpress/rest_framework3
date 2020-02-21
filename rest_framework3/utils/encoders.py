@@ -6,8 +6,8 @@ from django.db.models.query import QuerySet
 from django.utils import six, timezone
 from django.utils.encoding import force_text
 from django.utils.functional import Promise
-from rest_framework.compat import OrderedDict, total_seconds
-from rest_framework.utils.serializer_helpers import ReturnDict, ReturnList
+from rest_framework3.compat import OrderedDict, total_seconds
+from rest_framework3.utils.serializer_helpers import ReturnDict, ReturnList
 import datetime
 import decimal
 import types

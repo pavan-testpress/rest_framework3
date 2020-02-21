@@ -3,8 +3,8 @@ Pagination serializers determine the structure of the output that should
 be used for paginated responses.
 """
 from __future__ import unicode_literals
-from rest_framework import serializers
-from rest_framework.templatetags.rest_framework import replace_query_param
+from rest_framework3 import serializers
+from rest_framework3.templatetags.rest_framework import replace_query_param
 
 
 class NextPageField(serializers.Field):

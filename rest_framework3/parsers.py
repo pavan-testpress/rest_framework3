@@ -14,9 +14,9 @@ from django.http.multipartparser import MultiPartParserError, parse_header, Chun
 from django.utils import six
 from django.utils.six.moves.urllib import parse as urlparse
 from django.utils.encoding import force_text
-from rest_framework.compat import etree, yaml
-from rest_framework.exceptions import ParseError
-from rest_framework import renderers
+from rest_framework3.compat import etree, yaml
+from rest_framework3.exceptions import ParseError
+from rest_framework3 import renderers
 import json
 import datetime
 import decimal

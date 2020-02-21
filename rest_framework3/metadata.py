@@ -11,10 +11,10 @@ from __future__ import unicode_literals
 from django.core.exceptions import PermissionDenied
 from django.http import Http404
 from django.utils.encoding import force_text
-from rest_framework import exceptions, serializers
-from rest_framework.compat import OrderedDict
-from rest_framework.request import clone_request
-from rest_framework.utils.field_mapping import ClassLookupDict
+from rest_framework3 import exceptions, serializers
+from rest_framework3.compat import OrderedDict
+from rest_framework3.request import clone_request
+from rest_framework3.utils.field_mapping import ClassLookupDict
 
 
 class BaseMetadata(object):
