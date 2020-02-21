@@ -41,7 +41,7 @@ def get_package_data(package):
     return {package: filepaths}
 
 
-version = get_version('rest_framework3')
+version = get_version('rest_framework')
 
 
 if sys.argv[-1] == 'publish':
@@ -60,7 +60,7 @@ if sys.argv[-1] == 'publish':
 
 
 setup(
-    name='djangorestframework3',
+    name='djangorestframework',
     version=version,
     url='http://www.django-rest-framework.org',
     license='BSD',
