@@ -4,12 +4,12 @@ For example your project's `settings.py` file might look like this:
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
-        'rest_framework.renderers.JSONRenderer',
-        'rest_framework.renderers.YAMLRenderer',
+        'rest_framework3.renderers.JSONRenderer',
+        'rest_framework3.renderers.YAMLRenderer',
     )
     'DEFAULT_PARSER_CLASSES': (
-        'rest_framework.parsers.JSONParser',
-        'rest_framework.parsers.YAMLParser',
+        'rest_framework3.parsers.JSONParser',
+        'rest_framework3.parsers.YAMLParser',
     )
 }
 
@@ -29,27 +29,27 @@ USER_SETTINGS = getattr(settings, 'REST_FRAMEWORK', None)
 DEFAULTS = {
     # Base API policies
     'DEFAULT_RENDERER_CLASSES': (
-        'rest_framework.renderers.JSONRenderer',
-        'rest_framework.renderers.BrowsableAPIRenderer',
+        'rest_framework3.renderers.JSONRenderer',
+        'rest_framework3.renderers.BrowsableAPIRenderer',
     ),
     'DEFAULT_PARSER_CLASSES': (
-        'rest_framework.parsers.JSONParser',
-        'rest_framework.parsers.FormParser',
-        'rest_framework.parsers.MultiPartParser'
+        'rest_framework3.parsers.JSONParser',
+        'rest_framework3.parsers.FormParser',
+        'rest_framework3.parsers.MultiPartParser'
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication'
+        'rest_framework3.authentication.SessionAuthentication',
+        'rest_framework3.authentication.BasicAuthentication'
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.AllowAny',
+        'rest_framework3.permissions.AllowAny',
     ),
     'DEFAULT_THROTTLE_CLASSES': (),
-    'DEFAULT_CONTENT_NEGOTIATION_CLASS': 'rest_framework.negotiation.DefaultContentNegotiation',
-    'DEFAULT_METADATA_CLASS': 'rest_framework.metadata.SimpleMetadata',
+    'DEFAULT_CONTENT_NEGOTIATION_CLASS': 'rest_framework3.negotiation.DefaultContentNegotiation',
+    'DEFAULT_METADATA_CLASS': 'rest_framework3.metadata.SimpleMetadata',
 
     # Generic view behavior
-    'DEFAULT_PAGINATION_SERIALIZER_CLASS': 'rest_framework.pagination.PaginationSerializer',
+    'DEFAULT_PAGINATION_SERIALIZER_CLASS': 'rest_framework3.pagination.PaginationSerializer',
     'DEFAULT_FILTER_BACKENDS': (),
 
     # Throttling
@@ -73,17 +73,17 @@ DEFAULTS = {
     'UNAUTHENTICATED_TOKEN': None,
 
     # View configuration
-    'VIEW_NAME_FUNCTION': 'rest_framework.views.get_view_name',
-    'VIEW_DESCRIPTION_FUNCTION': 'rest_framework.views.get_view_description',
+    'VIEW_NAME_FUNCTION': 'rest_framework3.views.get_view_name',
+    'VIEW_DESCRIPTION_FUNCTION': 'rest_framework3.views.get_view_description',
 
     # Exception handling
-    'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
+    'EXCEPTION_HANDLER': 'rest_framework3.views.exception_handler',
     'NON_FIELD_ERRORS_KEY': 'non_field_errors',
 
     # Testing
     'TEST_REQUEST_RENDERER_CLASSES': (
-        'rest_framework.renderers.MultiPartRenderer',
-        'rest_framework.renderers.JSONRenderer'
+        'rest_framework3.renderers.MultiPartRenderer',
+        'rest_framework3.renderers.JSONRenderer'
     ),
     'TEST_REQUEST_DEFAULT_FORMAT': 'multipart',
 
@@ -167,7 +167,7 @@ class APISettings(object):
     A settings object, that allows API settings to be accessed as properties.
     For example:
 
-        from rest_framework.settings import api_settings
+        from rest_framework3.settings import api_settings
         print(api_settings.DEFAULT_RENDERER_CLASSES)
 
     Any setting with string import paths will be automatically resolved
