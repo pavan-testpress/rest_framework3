@@ -24,7 +24,7 @@ from django.utils import importlib, six
 from rest_framework3 import ISO_8601
 
 
-USER_SETTINGS = getattr(settings, 'REST_FRAMEWORK', None)
+USER_SETTINGS = getattr(settings, 'REST_FRAMEWORK3', None)
 
 DEFAULTS = {
     # Base API policies
